@@ -22,31 +22,67 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kso-O3-oFB" userLabel="celdaAlumno" customClass="CeldaAlumnoController" customModule="TableViews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="120" id="Kso-O3-oFB" userLabel="celdaAlumno" customClass="CeldaAlumnoController" customModule="TableViews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kso-O3-oFB" id="4f6-Ks-nKj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hei-oG-EFN">
-                                                    <rect key="frame" x="13" y="11.5" width="62" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hei-oG-EFN">
+                                                    <rect key="frame" x="13" y="12" width="291" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yux-6Q-f8n">
+                                                    <rect key="frame" x="13" y="41" width="234" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7N-uB-vxa">
+                                                    <rect key="frame" x="13" y="75" width="234" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Matricula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V7-Hl-jSb">
+                                                    <rect key="frame" x="320" y="12" width="71" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Hei-oG-EFN" firstAttribute="leading" secondItem="4f6-Ks-nKj" secondAttribute="leading" constant="13" id="5sU-XN-tLF"/>
-                                                <constraint firstAttribute="trailing" secondItem="Hei-oG-EFN" secondAttribute="trailing" constant="339" id="iWP-vn-oCI"/>
-                                                <constraint firstItem="Hei-oG-EFN" firstAttribute="centerY" secondItem="4f6-Ks-nKj" secondAttribute="centerY" id="peM-8w-nHW"/>
+                                                <constraint firstItem="Hei-oG-EFN" firstAttribute="top" secondItem="4f6-Ks-nKj" secondAttribute="top" constant="12" id="0In-BY-Jz8"/>
+                                                <constraint firstItem="Hei-oG-EFN" firstAttribute="leading" secondItem="4f6-Ks-nKj" secondAttribute="leading" constant="13" id="650-Ir-1gB"/>
+                                                <constraint firstItem="yux-6Q-f8n" firstAttribute="top" secondItem="Hei-oG-EFN" secondAttribute="bottom" constant="8" id="89Q-ho-08A"/>
+                                                <constraint firstItem="4V7-Hl-jSb" firstAttribute="top" secondItem="4f6-Ks-nKj" secondAttribute="top" constant="12" id="8bG-F6-iyc"/>
+                                                <constraint firstAttribute="bottom" secondItem="4V7-Hl-jSb" secondAttribute="bottom" constant="87" id="J2p-Nk-EnT"/>
+                                                <constraint firstItem="c7N-uB-vxa" firstAttribute="top" secondItem="yux-6Q-f8n" secondAttribute="bottom" constant="13" id="JGC-Sr-hZc"/>
+                                                <constraint firstAttribute="bottom" secondItem="c7N-uB-vxa" secondAttribute="bottom" constant="23.5" id="Nzx-Lt-elf"/>
+                                                <constraint firstAttribute="trailing" secondItem="4V7-Hl-jSb" secondAttribute="trailing" constant="23" id="R1M-WV-0ZX"/>
+                                                <constraint firstItem="c7N-uB-vxa" firstAttribute="leading" secondItem="4f6-Ks-nKj" secondAttribute="leading" constant="13" id="oA0-mC-HTW"/>
+                                                <constraint firstAttribute="trailing" secondItem="yux-6Q-f8n" secondAttribute="trailing" constant="167" id="oQX-g3-cVH"/>
+                                                <constraint firstAttribute="trailing" secondItem="c7N-uB-vxa" secondAttribute="trailing" constant="167" id="p1v-Te-aRS"/>
+                                                <constraint firstItem="yux-6Q-f8n" firstAttribute="leading" secondItem="4f6-Ks-nKj" secondAttribute="leading" constant="13" id="qW8-1K-Yqa"/>
+                                                <constraint firstItem="4V7-Hl-jSb" firstAttribute="leading" secondItem="Hei-oG-EFN" secondAttribute="trailing" constant="16" id="rw2-GW-B2L"/>
+                                                <constraint firstItem="yux-6Q-f8n" firstAttribute="leading" secondItem="c7N-uB-vxa" secondAttribute="trailing" constant="-234" id="zdD-4o-cuA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblApellido" destination="yux-6Q-f8n" id="vnK-X4-v0U"/>
+                                            <outlet property="lblCorreo" destination="c7N-uB-vxa" id="bgf-Pu-9Fd"/>
+                                            <outlet property="lblMatricula" destination="4V7-Hl-jSb" id="rww-wM-bnI"/>
                                             <outlet property="lblNombre" destination="Hei-oG-EFN" id="Hc2-Ju-4Df"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fmb-oc-q7c"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="kzg-le-Wsl"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
